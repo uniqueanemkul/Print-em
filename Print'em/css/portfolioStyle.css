@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/*css for team section*/
+.team {
+  position: relative;
+  width: 100%;
+  height: 140vh;
+  background: #EDE4E0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*css for container holding team members*/
+.team-content {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+/*css for team member images*/
+.team-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+/*css for center alignment*/
+.center {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+/*css for span*/
+.center span {
+  font-size: 2.4rem;
+  color: #6e6658;
+}
+
+/*css for h1 in the center*/
+.center h1 {
+  color: #73836a;
+  font-size: 3.4rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/*css for member boxes*/
+.box {
+  padding: 16px;
+  background: #ffff;
+  border: 10x solid #ececec;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+
+/*css for images for team members*/
+.box img {
+  border-radius: 50%;
+}
+
+/*css for members name in the boxes*/
+.box h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #172c66;
+  margin-bottom: 8px;
+}
+
+/*css for h2 text of the box*/
+.box h2 {
+  color: #73836a;
+}
+
+/*css for h5 text of the box*/
+.box h5 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: burlywood;
+  margin-bottom: 15px;
+  /*letter-spacing: 2px;*/
+}
+
+/*css for the boxes to pop when hovered*/
+.box:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+/*media query for responsice design*/
+@media (max-width: 1240px) {
+  .team {
+    width: 100%;
+    height: auto;
+    padding: 90px 2%;
+  }
+}

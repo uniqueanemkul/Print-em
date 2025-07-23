@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Styling of div img*/
+.image-container4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container4 img {
+    width: 600px;
+    height: 400px;
+    object-fit: contain;
+}
+
+/* Styling of desc div*/
+.desc {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.research {
+    margin: 100px;
+}

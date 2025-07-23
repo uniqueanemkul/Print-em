@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <script src="printem.js"></script>
+    <link rel="stylesheet" href="../css/printem.css">
+
+</head>
+<!--internal css-->
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        position: center;
+    }
+
+    h2 {
+        color: red;
+        text-align: center;
+        font-family: 'Wix Madefor Display', sans-serif;
+        font-size: 50px;
+    }
+
+    p {
+        text-align: center;
+        margin: 25px;
+        font-family: 'Wix Madefor Display', sans-serif;
+        font-size: 18px;
+    }
+
+    .form {
+        margin-top: 100px;
+    }
+
+    div {
+        margin: 50px;
+        text-align: center;
+    }
+
+    input[type=text],
+    input[type=password],
+    input[type=email] {
+        width: 55%;
+        padding: 18px 25px;
+        display: block;
+        border: 3px solid #ccc;
+        box-sizing: border-box;
+        font-size: medium;
+    }
+
+    button {
+        font-size: medium;
+        background-color: red;
+        color: white;
+        padding: 15px;
+        margin: 15px;
+        border: none;
+        cursor: pointer;
+        width: 20%;
+    }
+
+    button:hover {
+        background-color: rgb(255, 99, 99);
+    }
+
+    span {
+        color: #c3bfbf;
+    }
+
+    span a {
+        color: red;
+    }
+</style>
+
+
+
+
+<body>
+
+
+    <div class="form">
+        <h2>Create New Account</h2>
+        <p>Please fill in the Information : </p>
+        <form name="accountForm" onsubmit="validateForm()">
+
+            <div class="detail">
+
+                <input type="text" placeholder="First Name" name="firstname" required>
+                <br>
+
+                <input type="text" placeholder="Last Name" name="lastname" required>
+                <br>
+
+                <input type="email" name="email" placeholder="Email" required>
+                <br>
+
+                <input type="password" placeholder="Enter password" name="psw" required>
+                <br>
+                <button type="submit">Create Account</button>
+
+
+            </div>
+            <div class="login">
+                <span class="">Already have an account?
+                    <a href="#">Login here </a>
+
+                </span>
+
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

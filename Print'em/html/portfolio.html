@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title of the webpage-->
+    <title>Our Team Mates</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/portfolioStyle.css">
+    <link rel="stylesheet" href="../css/printem.css">
+
+</head>
+<nav class="topnav">
+    <!--Lisiting the menus in the navbar-->
+    <a href="../index.html" style="font-size: 26px;"><b><i>Print'Em!</i></b></a>
+    <div style="float: right;">
+        <a href="../html/product.html"><b>PRODUCTS</b></a>
+        <a href="../html/blog.html"><b>BLOG</b></a>
+        <a href="../html/portfolio.html"><b>ABOUT US</b></a>
+        <a href="../html/research.html"><b>RESEARCH</b></a>
+</nav>
+<br> <br>
+
+<body>
+    <section class="team">
+        <div class="center">
+
+            <!-- heading-->
+            <span><i><b>Print'Em!</b></i></span>
+            <h1>
+                Our Team Members
+            </h1>
+        </div>
+
+
+        <!--container for member boxes-->
+        <div class="team-content">
+
+            <!--member1 box-->
+            <div class="box">
+                <a href="member1.html">
+                    <img src="../img/photos/uniquea.jpg" alt="">
+                </a>
+
+                <a href="member1.html">
+                    <h3>Uniquea Nemkul</h3>
+                </a>
+                <h5>np01nt4a230142</h5>
+            </div>
+
+            <!--member2 box-->
+            <div class="box">
+                <a href="member2.html">
+                    <img src="../img/photos/priyesh.jpg" alt="">
+                </a>
+                <a href="member2.html">
+                    <h3>Priyesh Shrestha</h3>
+                </a>
+                <h5>np01nta230077</h5>
+            </div>
+
+            <!--member3 box-->
+            <div class="box">
+                <a href="member3.html">
+                    <img src="../img/photos/urusha.jpg" alt="">
+                </a>
+                <a href="member3.html">
+                    <h3>Urusha Neupane</h3>
+                </a>
+                <h5>np01nt4a230083</h5>
+            </div>
+
+            <!--member4 box-->
+            <div class="box">
+                <a href="member4.html">
+                    <img src="../img/photos/prasanna.jpg" alt="">
+                </a>
+                <a href="member4.html">
+                    <h3>Prasanna Kunwar Chhetri </h3>
+                </a>
+                <h5>np01nt4a230097</h5>
+
+            </div>
+        </div>
+        <br>
+
+        <!-- feedback form-->
+        <div class="box">
+            <h2 align="center">Feedback Form</h2> <br>
+            <form name="Form" onsubmit="validateForm()">
+                <label>Name:</label>
+                <input type="text" name="Name"> <br> <br>
+                <label>Email:</label>
+                <input type="text" name="Email"><br> <br>
+                <label>Contact:</label>
+                <input type="text" name="Contact"><br> <br>
+                <label>Gender:</label>
+                <input type="radio" name="genderdetails" checked value="male">Male
+                <input type="radio" name="genderdetails" value="female">female
+                <br> <br>
+                <label>Are you an existing member?</label>
+                <input type="radio" name="member" checked value="Yes">Yes
+                <input type="radio" name="member" value="No">No
+                <br> <br>
+                <label>Feedback:</label>
+                <br>
+                <textarea name="feedback" rows="6" cols="50" placeholder="Enter a message.."></textarea>
+                <br> <br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <!-- javaScript for form-->
+            <script type="text/javascript">
+                function validateForm() {
+                    var Name = document.forms["Form"]["Name"].value;
+                    var Email = document.forms["Form"]["Email"].value;
+                    var Contact = document.forms["Form"]["Contact"].value;
+                    var Gender = document.forms["Form"]["genderdetails"].value;
+                    var Areyouanexistingmember = document.forms["Form"]["member"].value;
+                    var messageValue = document.forms["Form"]["feedback"].value;
+
+                    if (Name == "" || Email == "" || Contact == "" || messageValue == "") {
+                        alert("Empty fields are found. Please fill all the fields...");
+                    } else {
+                        alert("Thank you for your valuable feedback!!!");
+                    }
+                }
+            </script>
+        </div>
+    </section>
+    <br> <br>
+    <footer class="text2">
+        <script src="../js/printem.js"></script>
+        <table>
+            <td class="left">
+                <p>
+                    <span class="text3" style="font-size: 26px; font-style: italic; font-weight: bold;">Print'Em!</span>
+                    <br><br>
+                    <a href="fb/printem.com"><img src="../img/homepage/FB.png" style="height: 25px; width: 25px;"></a>
+                    <a href="insta/print.com"><img src="../img/homepage/instagram.png"
+                            style="height: 25px; width: 25px;"></a>
+                    <br><br> Print them all!<br><br>
+                </p>
+            </td>
+            <td class="right">
+
+                <li> <a href="../html/portfolio.html" style="text-decoration: none; color: black;">About us</a></li>
+                <li> <a href="../html/product.html" style="text-decoration: none; color: black;">Proudcts</a></li>
+                <li> <a href="../html/blog.html" style="text-decoration: none; color: black;">Blogs</a></li>
+                <li> <a href="../html/research.html" style="text-decoration: none; color: black;">Research</a></li>
+                <br><br>
+                <button class="text3" onclick="scrollToTop()"><i>click me & to the top!</i></button>
+
+            </td>
+
+        </table>
+    </footer>
+</body>
+
+</html>

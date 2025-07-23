@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*css for the whole web page*/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #dbebea;
+}
+
+/*css for icon photos*/
+.icon {
+  width: 5%;
+}
+
+/*css for the main container*/
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: #ffff;
+  margin: 50px;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+/*css for top section of the web page*/
+.top {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #88bdbc;
+  padding: 50px;
+}
+
+/*css for h2 of webpage*/
+h2 {
+  font-size: 3em;
+  color: #ffff;
+  text-transform: uppercase;
+  line-height: 0.7em;
+  letter-spacing: 0.1em;
+}
+
+/*css for h2 span of webpage*/
+h2 span {
+  font-size: 0.4em;
+  font-weight: 300;
+}
+
+/*css for grouped content of the section*/
+.group {
+  position: relative;
+  display: grid;
+  gap: 40px;
+  width: 100%;
+  grid-template-columns: 2fr 3fr;
+  margin-top: 20px;
+}
+
+/*css for image box of the group*/
+.group .imageBox {
+  position: relative;
+  width: 100%;
+}
+
+/*css for image of the image box*/
+.group .imageBox img {
+  width: 100%;
+}
+
+/*css for paragraph of the webpage*/
+.group p {
+  color: #ffff;
+  size: 1.05em;
+}
+
+/*css for the bottom section of webpage*/
+.bottom {
+  position: relative;
+  display: grid;
+  margin: 50px 50px 0;
+  gap: 40px;
+  grid-template-columns: 2fr 3fr;
+}
+
+/*css for left side of the bottom section*/
+.bottom .left_Side {
+  margin-top: 50px;
+}
+
+/*css for h4 of webpage*/
+h4 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: #ffff;
+  background: #88bdbc;
+  font-weight: 600;
+  padding: 0 15px;
+  margin-top: 40px;
+  display: inline-flex;
+}
+
+/*css fr contact information list*/
+.contactInfo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+/*css for listing items of contactInfo*/
+.contactInfo li {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/*css for text of contactInfo*/
+.contactInfo li .text {
+  color: #555;
+}
+
+/*css for skillInfo*/
+.SkillsInfo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+/*css for text of skillInfo list*/
+.SkillsInfo li .text {
+  color: #555;
+}
+
+/*css for margin class*/
+.margin {
+  margin-top: -10px;
+}
+
+/*css for education group*/
+.edu-group {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+/*css for education group boxes*/
+.edu-groupBox {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+/* css fr styling first paragraph of the education group boxes*/
+.edu-groupBox p:nth-child(1) {
+  font-weight: 500;
+}
+
+/*css for bold text of education group bioxes*/
+.edu-groupBox b {
+  font-weight: 600;
+  color: #88bdbc;
+}
+
+/*css for span of bold texts of education group box*/
+.edu-groupBox b span {
+  position: relative;
+  top: -2px;
+  font-size: 0.8em;
+  color: #666;
+}
+
+/*css for hobbies section*/
+.hobbies {
+  padding: 0 50px 50px;
+}
+
+/*css for listing of hobbies section*/
+.hobbies ul {
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/*css for listing items of hibbies section*/
+.hobbies ul li {
+  list-style: none;
+  color: #88bdbc;
+  width: calc(100% / 5);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: #dbebea;
+  text-align: center;
+  cursor: pointer;
+}
+
+/*css for hovering effect on hobies section*/
+.hobbies ul li:hover {
+  background: #88bdbc;
+  color: #ffff;
+}

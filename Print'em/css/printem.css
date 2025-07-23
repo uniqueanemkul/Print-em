@@ -1,0 +1,283 @@
+/* Set margin for body */
+body {
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 75px;
+  /* Set background image and its properties */
+  background-image: url("../img/15364616_5585984.jpg");
+  background-size: cover;
+}
+
+/* Set width for all tables to 100% */
+table {
+  width: 100%;
+}
+
+/* Styling for a container */
+.container1 {
+  position: relative;
+  background-color: #EDE4E0;
+  border-radius: 25px;
+  padding: 3px;
+  box-shadow: 2px 2px 3px #7d695e;
+}
+
+/* Styling for an image container */
+.image-container {
+  position: absolute;
+  top: 35%;
+  right: 100px;
+  bottom: 10px;
+  width: 300px;
+  /* Center the image vertically within its container */
+  transform: translateY(-50%);
+}
+
+
+/* Styling for images inside containers */
+.insideimage {
+  width: 100%;
+  max-height: 400;
+  object-fit: contain;
+}
+
+/* Styling for top navigation */
+.topnav {
+  text-align: left;
+  background-color: #EDE4E0;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+/* Styling for links within top navigation */
+.topnav a {
+  color: #73836A;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 9px;
+}
+
+.topnav a:hover {
+  color: #9f8772;
+}
+
+/* Styling for a specific table */
+.table1 {
+  width: 250px;
+  height: 25px;
+  text-align: center;
+}
+
+/* Styling for links within the specific table */
+.table1 a {
+  color: #73836A;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.table1 a:hover {
+  color: #9f8772;
+}
+
+/* Styling for a search bar */
+.searchbar1 {
+  font-size: 15px;
+  border-radius: 6px;
+  width: 250px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 1px grey;
+}
+
+/* Styling for text */
+.text1 {
+  color: #73836a;
+}
+
+.text2 {
+  color: #6e6658;
+}
+
+.text3 {
+  color: #665A48
+}
+
+/* Styling for links */
+.links a {
+  color: #73836a;
+  font-size: medium;
+  text-decoration: none;
+  margin: 6px;
+  padding: 2px;
+  padding-left: 4px;
+}
+
+/* Styling for footer */
+footer {
+  background-color: #EDE4E0;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+footer .left {
+  width: 70%;
+}
+
+footer .right {
+  width: 30%;
+}
+
+
+/* product.CSS */
+/* Styling for products section */
+.products {
+  margin-top: 70px;
+  padding-top: 50px;
+}
+
+/* Flex container for product boxes */
+.products .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Styling for individual product boxes */
+.products .box-container .box {
+  text-align: center;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+/* Hover effect for product boxes */
+.box:hover {
+  box-shadow: 1px 1px 1px 1px rgb(168, 165, 165);
+}
+
+/* Styling for discount text */
+.discount {
+  font-style: oblique;
+  color: rgb(189, 183, 183);
+}
+
+/* Styling for buttons within product boxes */
+.products .box-container .box .btn {
+  border: 2px solid red;
+  background-color: white;
+  color: red;
+  font-size: 15px;
+  margin: 4px;
+  height: 35px;
+}
+
+/* Hover effect for buttons */
+.products .box-container .box .btn:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Styling for offer text */
+.offer {
+  background-color: red;
+  color: white;
+  font-style: oblique;
+  box-shadow: 1px 1px 1px 1px rgb(168, 165, 165);
+  border-bottom-right-radius: 5px;
+  padding: 2px 3px;
+}
+
+/* Styling for product description overlay */
+.pro-description {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, .8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for product description container */
+.pro-description .description {
+  display: none;
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  margin: 10px;
+  width: 400px;
+}
+
+.pro-description .description.active {
+  display: inline-block;
+}
+
+.pro-description .description img {
+  height: 250px;
+}
+
+/* Styling for close button */
+.cancel {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 23px;
+  background-color: white;
+  color: red;
+  border: none;
+  font-style: normal;
+}
+
+/* Styling for star ratings */
+.stars {
+  padding: 1rem 0;
+  font-size: 30px;
+}
+
+.stars i {
+  color: rgb(171, 167, 167);
+}
+
+.stars i.active {
+  color: orange;
+}
+
+.stars span {
+  color: rgb(243, 200, 120);
+}
+
+/* Styling for product description content */
+.pro-description .description h3 {
+  color: #515151;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.pro-description .description p {
+  line-height: 1.5;
+  font-size: 17px;
+  color: #777;
+}
+
+.pro-description .description .price {
+  padding-bottom: 10px;
+  font-size: 19px;
+}
+
+.pro-description .description .buy {
+  font-size: 15px;
+  border: none;
+  color: white;
+  background-color: red;
+  padding: 10px;
+}
+
+.pro-description .description .buy:hover {
+  background-color: rgb(237, 72, 72);
+  color: white;
+}

@@ -1,0 +1,306 @@
+/*--------------------------basic css-----------------------------*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*removing the underline appering in links*/
+a {
+  text-decoration: none;
+}
+
+/* css for blog*/
+#blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: #EDE4E0;
+}
+
+/*css for heading*/
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*css for span of heading*/
+.heading span {
+  font-size: 2.4rem;
+  color: #6e6658;
+}
+
+/* css for h3 heading*/
+.heading h3 {
+  font-size: 3.4rem;
+  color: #73836a;
+  font-weight: 600;
+}
+
+/* css for blog contents */
+.blogContents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  flex-wrap: wrap;
+}
+
+/* css for blog box */
+.blog-box {
+  width: 500px;
+  background-color: #ffff;
+  border: 10x solid #ececec;
+  margin: 20px;
+  border-radius: 10%;
+  transition: 0.3s ease;
+}
+
+/* css for container of cover image*/
+.blog-img {
+  flex: 1;
+  overflow: hidden;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+/*css for cover images of blog */
+.blog-img img {
+  object-fit: cover;
+  object-position: 3cap;
+  height: auto;
+  max-width: 100%;
+  border-radius: 1cm;
+  display: block;
+  transition: 0.3s ease;
+}
+
+/*css for blog box to pop when hovered*/
+.blog-box:hover {
+  transform: scale(1.1);
+}
+
+/*css for text of blog container*/
+.blog-text {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*css for span of blog container*/
+.blog-text span {
+  color: burlywood;
+  font-size: 0.9rem;
+}
+
+/*css for text and tittle of blog*/
+.blog-text .blog-title {
+  font-size: 1.3rem;
+  font-size: 500;
+  color: #172c66;
+}
+
+/*css for text to change colour when hovered*/
+.blog-text .blog-title:hover {
+  color: #f33c3c;
+  transition: all ease 0.3s;
+}
+
+/*css for paragraph of blog box*/
+.blog-text p {
+  color: #9b9b9b;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px 0px;
+}
+
+/*css for colour of readmore link*/
+.blog-text a {
+  color: #73836a;
+}
+
+/*css for colour of readmore to change when hovered*/
+.blog-text a:hover {
+  color: green;
+  transform: all ease 0.3s;
+}
+
+/* articleStyle.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*css for whole web page*/
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  max-width: 100vw;
+  line-height: 1.4;
+  padding: 20px 40px;
+}
+
+/*css for container*/
+.container {
+  max-width: 1200px;
+}
+
+/*css for headings*/
+.heading1 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.heading2 {
+  font-size: 40px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.heading3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: crimson;
+  margin-bottom: 10px;
+}
+
+/*css for sub headings*/
+.sub-heading {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.sub-heading p {
+  font-weight: 700;
+  text-transform: lowercase;
+  margin-right: 10px;
+}
+
+.sub-heading span {
+  columns: #555;
+  font-weight: 300;
+  border-right: 1px solid #ccc;
+  padding-right: 10px;
+}
+
+.sub-heading .important {
+  color: crimson;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+/*css for home section*/
+.home {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 40px;
+}
+
+.home video {
+  width: 100%;
+}
+
+/*css for list with grid layout*/
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.list img {
+  width: 100%;
+  height: 80px;
+}
+
+/*css for stuling image of figure*/
+figure img {
+  width: 90%;
+}
+
+/*css for paragraph styling*/
+p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  hyphens: auto;
+  text-align: justify;
+}
+
+/*css for blockquote */
+blockquote {
+  font-size: 20px;
+  padding: 10px 30px;
+  margin-bottom: 40px;
+  position: relative;
+  color: #666;
+  font-weight: bold;
+}
+
+blockquote i {
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: grey;
+}
+
+blockquote::before {
+  content: open-quote;
+  position: absolute;
+  top: -60px;
+  left: -4px;
+  opacity: 0.3;
+  color: #666;
+  font-size: 115px;
+}
+
+/*css for cards with multiple columns*/
+.cards {
+  columns: 25ch 3;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.card {
+  font-size: 20px;
+  border: 1px solid;
+  padding: 10px 20px;
+  break-inside: avoid;
+}
+
+/*media query for responisve design*/
+@media (max-width: 950px) {
+  .home {
+    grid-template-columns: 1fr;
+  }
+
+  .lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .list {
+    grid-template-columns: 1fr 5fr;
+  }
+
+  .card {
+    margin-bottom: 40px;
+  }
+}
+
+/*here*/
